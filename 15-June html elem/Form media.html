@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="post" autocomplete="on">
+
+        <label for="fname">First name:</label><br> <!-- input text-->
+        <input type="text" id="fname" name="fname"><br><hr>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br><hr>
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd"><br><hr>
+        
+        <label for="email">Enter your email:</label><br>
+        <input type="email" id="email" name="email"><br><hr>
+        
+        <label for="birthday">Birthday:</label><br>
+        <input type="date" id="birthday" name="birthday"><br><hr>
+        
+        <label for="bdaymonth">Birthday (month and year):</label><br>
+        <input type="month" id="bdaymonth" name="bdaymonth"><br><hr>
+        
+               
+        <label for="quantity">How many pets do you have? (between 1 and 5):</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" max="5"><br><hr>
+        
+        <label for="myfile">Uploade oyur id as a file:</label><br>
+        <input type="file" id="myfile" name="myfile"><br><hr>
+
+        <label for="favcolor">Select your favorite color:</label><br>
+        <input type="color" id="favcolor" name="favcolor"><br><hr>
+
+        <input type="radio" id="html" name="fav_language" value="HTML"> <!-- radio botton-->
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+            
+        <label for="fname">First name:</label><br>
+        <input type="hidden" id="custId" name="custId" value="3487"><br>
+            
+        <label for="datemax">Enter a date before 1980-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+        <label for="datemin">Enter a date after 2000-01-01:</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02">
+        <br>
+        <label for="birthdaytime">Birthday (date and time):</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+
+        <br>
+        
+        <br>
+        <input type="submit" value="Submit">
+            <br>
+        
+        
+            <br>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"> <!-- check box-->
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label>
+        <br>
+
+        <fieldset>
+            <legend>Personalia:</legend>
+
+        <label for="cars"> choose a car </label>
+            <select name="" id="cars" size="1" multiple>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+
+            </select>
+            </fieldset>
+
+            <br>
+            <br>
+            <hr>
+            <hr>
+            <label for="browsers"> choose your fav browser: </label>
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+                <option value="Internet Explorer" default>
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+                <br>
+                <hr>
+            <oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            0
+            <input type="range"  id="a" name="a" value="50">
+            100 +
+            <input type="number" id="b" name="b" value="50">
+            =
+            <output name="x" for="a b"></output>
+
+        <br>
+        <br>
+        <textarea name="message" rows="10" cols="10">
+            The cat was playing in the garden.
+            </textarea>
+            <br>
+            <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+            <br>
+            <input type="submit" value="Submit"> <!-- submit-->
+
+        
+            <video  height="500" controls>
+                <source src="ele.mp4" type="video/mp4">
+              
+              elephant video
+              </video>
+
+              <audio controls autoplay muted>
+                <source src="horse.ogg" type="audio/ogg">
+                <source src="horse.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio>
+
+
+    </form>
+    
+</body>
+</html>
