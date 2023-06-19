@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css styles.css">
+    <style>
+        h2 {
+            color:violet;
+            opacity: 0.3;
+        }
+        #para1 {
+        text-align: center;
+        color: rgb(255, 0, 238);
+        }
+
+        .center-green {
+        text-align: center;
+        color: rgb(9, 255, 0);
+        }
+
+        strong.center-green {
+        text-align: center;
+        color: rgb(255, 255, 0);
+        }
+        ul {
+
+        }
+        * {
+        font-size: 20px;
+        font-family:monospace;
+        
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:blue;"> blue color</h1>
+    <h2> violet color</h2>
+    <h3>external blue</h3>
+    <h4 class="center-green">class="center-green"</h4>
+    <h5 id="para1">id="para1"</h5>
+    <h5 id="para1">id="para1"</h5>
+    <div>
+    <p style="color:red;">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's <span id="para1"> id="para1" standard dummy text ever </span> since the 1500s, 
+        when an unknown <strong class="center-green">printer took</strong>  a galley of type and scrambled it to make a type specimen book. 
+        It has survived not only five centuries, but also the leap into electronic typesetting, 
+        remaining essentially unchanged. 
+        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+         and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+    </div>
+    <!-- <body> -->
+        <h1>Registration Form!!</h1>
+        <br>
+        <hr>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>our story</li>
+                <li>brands</li>
+                <li>about us</li>
+                
+            </ul>
+        </nav>
+        <!-- <div style="border: 10px solid black;"> -->
+        <div>    
+            
+    
+            <form method="post">
+                <fieldset>
+                    <!-- <legend>Personal Details</legend> -->
+                    <h2>Personal Details</h2>
+    
+                <label for="Firstname">FirstName:</label>
+                    <input type="text" id="Firstname" name="Firstname" placeholder="FirstName">
+                
+                <br><br>
+                <label for="lastname">LastName:</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="LastName">
+                
+                <br><br>
+                <label for="Email">Email:</label>
+                    <input type="email" id="Email" name="Email" placeholder="Email">
+                
+                <br><br>
+                <label for="male">Gender:</label>
+    
+                
+                <input type="radio" id="male" name="gender" placeholder="" value="male">
+                <label for="male">Male</label>
+    
+                <input type="radio" id="Female" name="gender" placeholder="" value="female">
+                <label for="Female">Female</label>
+                    
+                
+                <br><br>
+    
+                <label for="city">Choose City :</label>
+                    <select name="city" id="city">
+                        <option value="city">city:</option>
+                        <option value="amman">Amman</option>
+                        <option value="irbid">Irbid</option>
+                    </select>
+                
+                <br><br>
+                <input type="submit" placeholder="Submit">
+                </fieldset>
+            </form>
+        </div>
+        
+    </body>
+</body>
+</html>
