@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            
+            display: inline-block;
+            /* overflow: hidden; */
+            border: 1px solid gray;
+            
+        }
+        div div{
+            border: 1px solid gray;
+            width: 200px;
+            height: 1000;
+            /* padding: 20px; */
+            display: inline-block;
+            overflow: hidden;
+            margin-right: 20px;
+            position: relative;
+            padding-bottom: 100px;
+            
+            
+
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            padding: 0;
+
+        }
+        #last-div{
+            margin-right: 0;
+            
+
+        }
+        .footing
+        {
+            background-color: rgb(56, 55, 55);
+            color: white;
+            position: absolute;
+            bottom: -80px;
+            /* text-align: center; */
+            /* height: 10px; */
+        }
+        h3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <h3>a short heading</h3>
+            <img src="./blon.jpg" alt="balloon pic">
+            <p>
+                A hot air balloon is a lighter-than-air aircraft consisting of a bag, 
+                called an envelope, which contains heated air. 
+                Suspended beneath is a gondola or wicker basket
+
+            </p>
+            
+
+        </div>
+        <div>
+            <h3>a short heading</h3>
+            <img src="./bl2.jpg" alt="balloon pic">
+            <p>
+                A hot air balloon is a lighter-than-air aircraft consisting of a bag, 
+                called an envelope, which contains heated air. 
+                Suspended beneath is a gondola or wicker basket
+            </p>
+            <div class="footing">
+                I have a footing!
+            </div>
+
+        </div>
+        <div id="last-div">
+            <h3>a long heading in this card</h3>
+            <img style="float:right ;" src="./blon.jpg" alt="balloon pic">
+            <p>
+                A hot air balloon is a lighter-than-air aircraft consisting of a bag, 
+                called an envelope, which contains heated air. 
+                Suspended beneath is a gondola or wicker basket
+
+            </p>
+            <div class="footing">
+                I have a footing!
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
