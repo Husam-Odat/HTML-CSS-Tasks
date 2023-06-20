@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        div div {
+            height: 200px;
+            width: 200px;
+            margin-right: 10px;
+            background-color: red;
+            display: inline-block;
+            font-size: x-large;
+            color: aliceblue;
+        }
+        .container{
+            height: fit-content;
+            width: fit-content;
+            border: 1px dashed gray;
+            margin-bottom: 100px;
+            
+        }
+        .second-box{
+            background-color: green;
+        }
+        .position-relative-second-box{
+            position: absolute; 
+            left: 240px ; 
+            top: 40px;
+
+        }
+        .position-absolute-second-box{
+            position: absolute; 
+            left: 20px ; 
+            top: 20px;
+
+        }
+        .container-relative-absolute{
+            position: relative;
+            
+        }
+        .hidden-box{
+            position: relative ; 
+            visibility: hidden;
+
+        }
+        .fourth-box{
+            margin: 0;
+        }
+    </style>
+
+</head>
+<body>
+    <h2>position : static</h2>
+    <div class="container">
+        
+        <div>One</div>
+        <div class="second-box" >Two</div>
+        <div >Three</div>
+        <div class="fourth-box">Four</div>
+    </div>
+
+    <h2>position : relative</h2>
+    <div class="container container-relative-absolute">
+        
+        <div>One</div>
+        <div class="hidden-box second-box" >Two</div>
+        <div class="position-relative-second-box second-box" >Two</div>
+        <div >Three</div>
+        <div class="fourth-box">Four</div>
+    </div>
+
+    <h2>position : absolute</h2>
+    <div class="container container-relative-absolute" >
+        
+        <div>One</div>
+        
+        <div class="second-box position-absolute-second-box"  >Two</div>
+        <div >Three</div>
+        <div class="fourth-box">Four</div>
+    </div>
+    
+</body>
+</html>

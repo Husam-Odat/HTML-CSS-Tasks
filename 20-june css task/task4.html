@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        div div {
+            height: 200px;
+            width: 200px;
+            margin-right: 10px;
+            background-color: red;
+            display: inline-block;
+            font-size: x-large;
+            color: aliceblue;
+        }
+        .container{
+            height: fit-content;
+            width: fit-content;
+            border: 1px dashed gray;
+            margin-bottom: 100px;
+            
+        }
+        .secondbox{
+            background-color: green;
+        }
+        .position-relative-second-box{
+
+        }
+        .container-relative-absolute{
+            
+        }
+        .hidden-box{
+
+        }
+        .fourth-box{
+            margin: 0;
+        }
+    </style>
+
+</head>
+<body>
+    <h2>position : static</h2>
+    <div class="container">
+        
+        <div>One</div>
+        <div class="secondbox" >Two</div>
+        <div >Three</div>
+        <div style="margin: 0;">Four</div>
+    </div>
+
+    <h2>position : relative</h2>
+    <div class="container" style="position: relative;">
+        
+        <div>One</div>
+        <div style="position: relative ; visibility: hidden ;" class="secondbox" >Two</div>
+        <div style="position: absolute; left: 240px ; top: 40px;" class="secondbox" >Two</div>
+        <div >Three</div>
+        <div style="margin: 0;">Four</div>
+    </div>
+
+    <h2>position : absolute</h2>
+    <div class="container" style="position: relative;">
+        
+        <div>One</div>
+        
+        <div style="position: absolute; left: 20px ; top: 20px;" class="secondbox" >Two</div>
+        <div >Three</div>
+        <div style="margin: 0;">Four</div>
+    </div>
+    
+</body>
+</html>
