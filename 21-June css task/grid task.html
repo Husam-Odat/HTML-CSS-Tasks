@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container-grid{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto ;
+            gap: 10px;
+            /* width: 1000px; */
+            /* height: 5000px; */
+            /* flex-wrap: wrap; */
+            
+            border: 1px solid goldenrod;
+            
+            
+
+        }
+        .box-gray{
+            background-color: gray;
+            grid-column: 1/13;
+            grid-row: 1/2;
+            height:33px ;
+            
+        }
+        .box-blue{
+            background-color: rgb(0, 34, 255);
+            grid-column: 1/9;
+            grid-row: 2/4;
+            height: 100px;
+        }
+        .box-lightblue{
+            background-color: lightblue;
+            grid-column: 9/13;
+            grid-row: 2/4;
+            height: 100px;
+    
+        }
+        .box-yellow1{
+            background-color: yellow;
+            grid-column: 1/5;
+            grid-row: 4/6;
+            height: 100px;
+
+        }
+        .box-yellow2{
+            background-color: yellow;
+            grid-column: 5/9;
+            grid-row: 4/6;
+            height: 100px;
+
+        }
+        .box-yellow3{
+            background-color: yellow;
+            grid-column: 9/13;
+            grid-row: 4/6;
+            height: 100px;
+
+        }
+        .box-lightblue1{
+            background-color: lightblue;
+            grid-column: 1/5;
+            grid-row: 6/8;
+            height: 100px;
+
+        }
+        .box-blue2{
+            background-color: blue;
+            grid-column: 5/13;
+            grid-row: 6/8;
+            height: 100px;
+
+        }
+        .box-orangered1{
+            background-color: orangered;
+            grid-column: 1/4;
+            grid-row: 8/10;
+            height: 100px;
+            }
+            .box-orangered2{
+            background-color: orangered;
+            grid-column: 4/7;
+            grid-row: 8/10;
+            height: 100px;
+            }
+            .box-orangered3{
+            background-color: orangered;
+            grid-column: 7/10;
+            grid-row: 8/10;
+            height: 100px;
+            }
+            .box-orangered4{
+            background-color: orangered;
+            grid-column: 10/13;
+            grid-row: 8/10;
+            height: 100px;
+            }
+            .box-gray2{
+            background-color: gray;
+            grid-column: 1/13;
+            grid-row: 10/11;
+            height:33px ;
+            
+        }
+            
+        div div {
+            /* height: 1000px;
+            width: 100px; */
+            padding: 10px;
+            text-align: center;
+            color: white;
+            font-size: x-large;
+            align-items: stretch;
+            
+            
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="container-grid">
+        <div class="box-gray"></div>
+        <div class="box-blue"></div>
+        <div class="box-lightblue"></div>
+        <div class="box-yellow1"></div>
+        <div class="box-yellow2"></div>
+        <div class="box-yellow3"></div>
+        <div class="box-lightblue1"></div>
+        <div class="box-blue2"></div>
+        <div class="box-orangered1"></div>
+        <div class="box-orangered2"></div>
+        <div class="box-orangered3"></div>
+        <div class="box-orangered4"></div>
+        <div class="box-gray2"></div>
+
+        
+        
+    </div>
+    
+</body>
+</html>

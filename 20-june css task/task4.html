@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Task4</title>
     <style>
         
         div div {
@@ -22,11 +22,29 @@
             margin-bottom: 100px;
             
         }
-        .secondbox{
+        .second-box{
             background-color: green;
         }
-       
+        .position-relative-second-box{
+            position: relative; 
+            left: 50px ; 
+            top: 40px;
+
+        }
+        .position-absolute-second-box{
+            position: absolute; 
+            left: 20px ; 
+            top: 20px;
+
+        }
+        .container-relative-absolute{
+            position: relative;
+            
+        }
         
+        .fourth-box{
+            margin: 0;
+        }
     </style>
 
 </head>
@@ -35,29 +53,29 @@
     <div class="container">
         
         <div>One</div>
-        <div class="secondbox" >Two</div>
+        <div class="second-box" >Two</div>
         <div >Three</div>
-        <div style="margin: 0;">Four</div>
+        <div class="fourth-box">Four</div>
     </div>
 
     <h2>position : relative</h2>
-    <div class="container" style="position: relative;">
+    <div class="container container-relative-absolute">
         
         <div>One</div>
-        <div style="position: relative ; visibility: hidden ;" class="secondbox" >Two</div>
-        <div style="position: absolute; left: 240px ; top: 40px;" class="secondbox" >Two</div>
-        <div >Three</div>
-        <div style="margin: 0;">Four</div>
+        
+        <div class="position-relative-second-box second-box" >Two</div>
+        <div>Three</div>
+        <div class="fourth-box">Four</div>
     </div>
 
     <h2>position : absolute</h2>
-    <div class="container" style="position: relative;">
+    <div class="container container-relative-absolute" >
         
         <div>One</div>
         
-        <div style="position: absolute; left: 20px ; top: 20px;" class="secondbox" >Two</div>
+        <div class="second-box position-absolute-second-box"  >Two</div>
         <div >Three</div>
-        <div style="margin: 0;">Four</div>
+        <div class="fourth-box">Four</div>
     </div>
     
 </body>
