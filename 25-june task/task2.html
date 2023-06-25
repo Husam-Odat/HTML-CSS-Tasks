@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <style>
+    .animation {
+            height: 100px;
+            width: 100px;
+            left:200px;
+            top:0px;
+            border-radius: 10%;
+            background-color: green;
+
+        animation-name: first;
+        animation-duration: 7s;
+        position: relative;
+        animation-delay: 2s;
+        animation-iteration-count: 2;
+        animation-direction: normal;
+        transition-timing-function: linear;
+
+                }
+                /* @keyframes first {
+            
+            0%   {background-color:green; left:200px; top:0px;}
+            25%  {background-image: linear-gradient(green, rgb(141, 212, 243)); left:400px; top:0px;}
+            37.5%  {background-image: linear-gradient(rgb(141, 212, 243), rgb(2, 52, 249)); left:400px; top:0px;}
+            50%  {background-image: linear-gradient(rgb(74, 13, 243), rgb(249, 249, 2)); left:400px; top:400px;}
+            67.5%  {background-image: linear-gradient(rgb(236, 204, 122), rgb(249, 249, 2)); left:0px; top:400px;}
+            100% {background-image: linear-gradient(rgb(236, 204, 122), rgb(249, 2, 64)); left:0px; top:0px;}
+                    } */
+
+                @keyframes first {
+            
+            
+            0% {background-image: linear-gradient(green, aqua);left:400px; top:0px;}
+            16.7% {background-image: linear-gradient( aqua, blue);left:400px; top:400px;}
+            33.4% {background-image: linear-gradient( rgb(64, 0, 255) ,yellow); } 
+            50.1% {background-image: linear-gradient(yellow,orange); left:0px; top:400px;}
+            66.8% {background-image: linear-gradient(orange,yellow);}
+            83.5% {background-image: linear-gradient( red,green); left:0px; top:0px;}                    
+            100%  { background-color: green; left:200px; top:0px;}
+            
+                    }
+    </style>
+</head>
+<body>
+    
+    <div class="animation"></div>
+</body>
+</html>

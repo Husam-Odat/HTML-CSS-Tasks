@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+    <style> 
+        div  {
+            display: inline-block;
+          width: 100px;
+          height: 100px;
+          background: red;
+          transition: width 2s, height 2s, transform 2s;
+          transition-delay: 0.2s;
+          font-family: 'Caprasimo', cursive;
+          text-align: center;
+          
+          align-items: center;
+          justify-items: center;
+          justify-content: center;
+          align-content: center;
+
+          
+          
+          /* transition: width 2s linear 1s;        */
+         /* transition-property: width;
+         transition-duration: 2s;
+         transition-timing-function: linear;
+         transition-delay: 1s; */
+
+
+            
+        }
+        #animation {
+            
+            animation-name: first;
+            animation-duration: 10s;
+            position: relative;
+            animation-delay: 2s;
+            animation-iteration-count: 2;
+                                        /* infinite */
+            animation-direction: reverse;
+                                 /* normal - The animation is played as normal (forwards). This is default
+                                 reverse - The animation is played in reverse direction (backwards)
+                                 alternate - The animation is played forwards first, then backwards
+                                 alternate-reverse - The animation is played backwards first, then forwards */
+            animation-fill-mode: forwards;
+                                /* none - Default value. Animation will not apply any styles to the element before or after it is executing
+                                forwards - The element will retain the style values that is set by the last keyframe (depends on animation-direction and animation-iteration-count)
+                                backwards - The element will get the style values that is set by the first keyframe (depends on animation-direction), and retain this during the animation-delay period
+                                both - The animation will follow the rules for both forwards and backwards, extending the animation properties in both directions                      */
+        }
+
+        @keyframes first {
+            
+        0%   {background-color:red; left:0px; top:0px;}
+        25%  {background-color:yellow; left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:green; left:0px; top:200px;}
+        100% {background-color:red; left:0px; top:0px;}
+                }
+                            
+        div:hover {
+        width: 300px;
+        /* height: 300px; */
+        transform: rotate(360deg);
+        }
+
+        #div1:hover {
+        width: 300px;
+        height: 300px;
+        transform: rotate(360deg);
+        }
+
+
+        #div1 {transition-timing-function: linear;}
+        #div2 {transition-timing-function: ease;}
+        #div3 {transition-timing-function: ease-in;}
+        #div4 {transition-timing-function: ease-out;}
+        #div5 {transition-timing-function: ease-in-out;}
+        #div6 {transition-timing-function:cubic-bezier(0.42, 0, 0.58, 1)}
+
+
+        
+        /* ease cubic-bezier(0.25, 0.1, 0.25, 1)
+        ease-in cubic-bezier(0.42, 0, 1, 1)
+        ease-out cubic-bezier(0, 0, 0.58, 1)
+        ease-in-out cubic-bezier(0.42, 0, 0.58, 1) */
+
+        </style>
+        </head>
+        <body>
+        
+        <h1>The transition Property</h1>
+        
+        <p>Hover over the div element below, to see the transition effect:</p>
+        <!-- <div></div><br> -->
+        <div id="animation">animation</div>
+
+        <div id="div1">linear</div>
+        <div id="div2">ease</div>
+        <div id="div3">ease-in</div>
+        <div id="div4">ease-out</div>
+        <div id="div5">ease-in-out</div>
+        <div id="div6">cubic-bezier</div>
+
+        
+
+    
+        
+        </body>
+        </html>
+        
