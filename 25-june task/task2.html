@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task2</title>
+    <script src="https://kit.fontawesome.com/1aa9f8297a.js" crossorigin="anonymous"></script>
     <style>
     .animation {
             height: 100px;
@@ -18,7 +19,7 @@
         position: relative;
         animation-delay: 2s;
         animation-iteration-count: 2;
-        animation-direction: normal;
+        animation-direction:alternate-reverse;
         transition-timing-function: linear;
 
                 }
@@ -47,6 +48,12 @@
     </style>
 </head>
 <body>
+    <i class="fa-solid fa-ghost fa-2xl"></i>
+    <i class="fa-solid fa-shield-halved"></i>
+    <font-awesome-icon :icon="['fas', 'wheat-slash']" beat />
+    <i class="fa-solid fa-browser"></i>
+    <i class="fa-solid fa-user"></i>
+    <i class="fa-solid fa-wheat-slash"></i>
     
     <div class="animation"></div>
 </body>

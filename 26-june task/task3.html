@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        #flex-container {
+            /* width: 1000px; 
+            height: 700px;  */
+             display: flex; 
+            flex-wrap: wrap; 
+            flex-direction: row;
+           
+        }
+
+        @media screen and (max-width: 480px) {
+            #flex-container {
+                width: 100%;
+            flex-direction: column;
+            .box{
+                width: 100%;
+            }
+
+            
+        }}
+    </style>
+    <script src="https://kit.fontawesome.com/1aa9f8297a.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+ 
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Abaut</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">contact us</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" href="#">Action 1</a>
+                    <a class="dropdown-item" href="#">Action 2</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="email" placeholder="email">
+            <input class="form-control mr-sm-2" type="password" placeholder="password">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+        </form>
+    </div>
+</nav>
+
+<div class="card bg-light container-fluid py-5 mt-5">
+    <!-- <div class="card-header">
+       
+    </div> -->
+    <div class="card-body ">
+        <h1> Hallo, world!</h1>
+        <p class="card-text">this is Exersize £9 .It include callout called a jumbotron and three supporting pieces of contscts.</p>
+        <button type="submit" class="btn btn-primary">Learn More</button>
+    </div>
+</div>
+
+<div class="alert alert-warning alert-dismissible container py-1 my-1" >
+    <button type="button" class="close py-1" data-dismiss="alert">&times;</button>
+    <strong>Warning!</strong> your subscription is about to expire in 3 days.
+    
+  </div>
+
+  <div id="flex-container" class="row py-1 my-1 " >
+    
+    <div class="col-4 box" >
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">Heading</h3>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae error suscipit aspernatur dicta vel possimus autem ipsa velit earum, sit omnis, quia distinctio assumenda blanditiis totam maxime ad. Debitis, qui.</p>
+          <button type="submit" class="btn btn-outline-secondary py-1 my-1"><i class="fa-solid fa-chart-simple"></i> View details</button>
+        </div>
+        
+      </div>
+    </div>
+    <div class="col-4 box" >
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">Heading</h3>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae error suscipit aspernatur dicta vel possimus autem ipsa velit earum, sit omnis, quia distinctio assumenda blanditiis totam maxime ad. Debitis, qui.</p>
+          <button type="submit" class="btn btn-outline-secondary py-1 my-1"><i class="fa-solid fa-mobile-screen"></i> View details</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-4 box"  >
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">Heading</h3>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo culpa nemo hic maiores iste beatae a, natus inventore labore. Quo deleniti ipsam numquam molestiae modi, minus in quos enim illum?</p>
+          <button type="submit" class="btn btn-outline-secondary py-1 my-1"><i class="fa-solid fa-location-dot"></i> View details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Optional JavaScript -->
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
