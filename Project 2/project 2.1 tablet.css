@@ -30,6 +30,10 @@
                             
                         
               }
+              #photo-Project-1,
+              #photo-Project-2  {
+                padding: 0;
+              }
                         
     img {
         text-align: center;

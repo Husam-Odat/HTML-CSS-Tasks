@@ -1,34 +1,42 @@
 
 @media screen and (max-width: 480px) {
+
+     /* p {
+        
+        font-size: medium !important;
+        background-color: #132C33; 
+        
+    }
+
+    #education-pa-2{font-size: x-small !important;}  */
+
     #img-hero-sec{
-   background-image: url(./img/hero-sec.gif);
-   background-size: cover;
-   background-repeat: no-repeat;
-   height: 400px;
+   
+   height: 300px;
     
     }
+*{
+   
+    font-size: x-small;
+    /* background-color: #132C33; */
     
+}    
 
 
 #text-hero-section1{
-    text-align: center;
-    font-size: 25px;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    font-weight: bolder;
-    text-shadow: 5px 5px 5px  gray;
-    font-family: 'Times New Roman', Times, serif;
+    
+    font-size: 20px;
+    
     
 }
 nav{
     position: sticky !important;
 }
-.logo{
+/* .logo{
     height: 50px;
     width: 50px;
     
-}
+} */
 
 #about-container{
     
@@ -42,30 +50,29 @@ nav{
 }
 
 #about-head{
-    margin-top: 100px;
-    text-align: center;
+    margin-top: 0px;
+    
     grid-column:1;
     grid-row:1;
 
 }
 #about-p{
     grid-column:1;
-    text-align: center;
-    font-size: large;
-    justify-content: center;
-    align-items: center;
+    
+    /* font-size: large; */
+   
 
 }
 #about-text{
-    margin: 100px;
+    margin: 10px;
     grid-column: 1;
     grid-row: 3;
-    text-align: center;
+    
 
 }
 
 #about-img{
-    padding-left: 40%;
+    padding-left: 30%;
     grid-column: 1;
     grid-row: 2;
     
@@ -74,6 +81,7 @@ nav{
 /* ----------------header End -------------- */
 
 #about{
+   
     display: grid;
     grid-template-columns: 1fr;
     /* grid-template-rows: 100px 100px; */
@@ -89,8 +97,8 @@ nav{
         }
 
 #about-h2{
-    text-align: center;
-    font-size: 50px;
+    
+    font-size: 20px;
 
         }
     #h2{
@@ -99,14 +107,14 @@ nav{
     }
     h2{
     text-align: center;
-    font-size: 50px !important;
-    margin-top: 100px !important;
-    margin-bottom: 50px !important;
+    font-size: 30px !important;
+    margin-top: 40px !important;
+    margin-bottom: 20px !important;
     text-shadow: 5px 5px 5px  gray !important;
     
 
         }
-    h3{
+    /* h3{
     text-align: center;
     font-size: 25px !important;
     
@@ -115,28 +123,30 @@ nav{
     text-shadow: 2px 2px 2px  gray !important;
     
 
-        }
+        } */
 
 #about-h3{
     grid-row: 1;
     grid-column: 1;
     text-align: center;
-    font-size: 50px;
+    font-size: 10px;
             }
 h3{
     text-align: center;
-    font-size: 100px;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    font-size: 15px !important;
+    margin-top: 1em !important;
+    margin-bottom: 1em !important;
 }            
 
 #about-p{
     grid-row: 3;
     text-align: center;
-    font-size: 30px;
+    font-size: 10px;
 
         }
-
+ #about-pp{
+            font-size: 20px;
+        }   
 #img-about{
     /* height: 100px; */
     width: 100px;
@@ -294,22 +304,32 @@ img {
     width: 100%;
     grid-column:1 ;
     grid-row:1 ;
+    margin-right: 10%;
+    /* padding-left: 5em; */
 
 }
 #education-2{
     width: 100%;
     grid-column:1 ;
     grid-row:2 ;
+    margin-left: 10%;
     
+
+}
+#img-edu{
+    width: 75%; 
+    height: 200px;
+    margin-left: 10%;
+
 
 }
 /* -------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------- */
 #Projects-container{
     display: grid;
-    grid-template-columns: 1fr   ;
+    grid-template-columns: 1fr ;
     grid-template-rows: auto;
-    justify-content: space-around;
+    justify-content: center;
     justify-items: center;
     align-items: center;
    
@@ -321,100 +341,59 @@ img {
 #text-Project-1{
     grid-column:1 ;
     grid-row:1 ;
+    padding: 0;
+    margin-right: 10%;
+    /* margin-right:1em ;
+    margin-left:1em ;
+    padding-left:1em ;
+    padding-right:1em ; */
 
 }
 #photo-Project-1{
     grid-column:1 ;
     grid-row:2 ;
-    
+    padding: 0;
+    margin-left: 10%;
 }
 #photo-Project-1 img{
-    height: 300px;
+    /* height: 300px; */
     width: 100%;
 }
 #text-Project-2{
     grid-column:1 ;
     grid-row:3 ;
+    padding: 0;
+    /* margin-right:1em ;
+    margin-left:1em ;
+    padding-left:1em ;
+    padding-right:1em ; */
+    margin-right: 10%;
+
 
 }
 #photo-Project-2{
     grid-column:1 ;
     grid-row:4 ;
+    padding: 0;
+    margin-left: 10%;
 
 }
 #photo-Project-2 img{
-    height: 300px;
+    height: 500px;
     width: 100%;
 }
 /* ----------------------------------------- */
 /* ----------------------------------------- */
 
-#languages-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: auto auto auto;
-    justify-content: space-between;
-    justify-items: center;
-    align-items: center;
-    align-content: space-between;
-} 
-.language-photo{
-    width: 100%;
-        height: 100%;
-        object-fit: cover;
-        overflow: hidden; 
-        height: 100px;
-}
+
 .language-text h3{
     margin-bottom: 20px !important;
     
 }
 
-/* .language-box{
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1;
-} */
-#language-text-1{
-    grid-column:1 ;
-    grid-row:1 ;
-}
-#language-photo-1{
-    grid-column:1 ;
-    grid-row: 2;
-
-}
-#language-text-2{
-    grid-column:1 ;
-    grid-row:3 ;
-}
-#language-photo-2{
-    grid-column:1 ;
-    grid-row: 4;
-
-}
-#language-text-3{
-    grid-column:1 ;
-    grid-row:5 ;
-}
-#language-photo-3{
-    grid-column:1 ;
-    grid-row: 6;
-
-}
-
-table, td {
-border: 1px solid black;
-border-collapse: collapse;
-font-size: larger;
-
-}
- td {
-/* padding-top: 5px;
-padding-bottom: 5px; */
-padding-left: 5px;
-padding-right: 5px;
-}
+#Languages-container{
+    
+    margin-right: 7%;}
 
 /* -------------------------------------------------------
 ------------------------------------------------------- */
@@ -437,7 +416,7 @@ padding-right: 5px;
     grid-row: 1;
     text-align: center;
     font-size:medium;
-    margin: 1em;
+    margin: 0;
     
     }
     /* font-weight: bold; */
@@ -447,14 +426,16 @@ padding-right: 5px;
     grid-row: 2;
     text-align: center;
     font-size: medium;
+    border-radius: 0%;
+    box-shadow: 0;
     /* font-weight: bold; */
-    margin: 1em;
+    margin: 0;
 }
 
 /* ---------------------------------------- */
 #footer-container{
     display: grid;
-    grid-template-columns:  1fr;
+    grid-template-columns:  1fr 1fr;
     grid-template-rows: auto auto;
     margin-top: 20px;
     
@@ -477,8 +458,8 @@ padding-right: 5px;
     grid-row:4 ;
 }
 #footer-part-4{
-    grid-column:1 ;
-    grid-row:5 ;
+    grid-column:2 ;
+    grid-row:1/5 ;
     text-align: center;
     margin-top: 50px;
 }
@@ -486,15 +467,15 @@ ul{
     list-style-type: none;
 }
 footer{
-    font-size: medium;
+    font-size: x-small;
     font-weight: bold;
     border: 2px solid gray;
     font-size: x-large;
     
 }
 #logo-footer{
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
 }
   
 }
